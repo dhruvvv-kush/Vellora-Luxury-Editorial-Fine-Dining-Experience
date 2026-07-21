@@ -51,14 +51,14 @@ const menuItems: Record<Category, MenuItem[]> = {
       name: "Burrata Caprese",
       description: "Heirloom tomatoes, basil oil, cracked black pepper, aged balsamic.",
       price: "$16",
-      image: "/images/burrata-caprese.jpg",
+      image: "./images/burrata-caprese.jpg",
       tags: ["Vegetarian"],
     },
     {
       name: "Crispy Calamari",
       description: "Lemon, parsley, sea salt, warm garlic aioli.",
       price: "$15",
-      image: "/images/crispy-calamari.jpg",
+      image: "./images/crispy-calamari.jpg",
     },
   ],
   Mains: [
@@ -66,26 +66,26 @@ const menuItems: Record<Category, MenuItem[]> = {
       name: "Grilled Ribeye",
       description: "Herb butter, roasted carrots, asparagus, cherry tomatoes.",
       price: "$38",
-      image: "/images/grilled-ribeye.jpg",
+      image: "./images/grilled-ribeye.jpg",
     },
     {
       name: "Pan-Seared Salmon",
       description: "Lemon butter, sauteed spinach, herbs, coastal greens.",
       price: "$28",
-      image: "/images/pan-seared-salmon.jpg",
+      image: "./images/pan-seared-salmon.jpg",
     },
     {
       name: "Truffle Mushroom Risotto",
       description: "Wild mushrooms, parmesan, thyme, shaved black truffle.",
       price: "$30",
-      image: "/images/truffle-mushroom-risotto.jpg",
+      image: "./images/truffle-mushroom-risotto.jpg",
       tags: ["Vegetarian"],
     },
     {
       name: "Vellora Cheeseburger",
       description: "Brioche, aged cheddar, tomato, lettuce, hand-cut fries.",
       price: "$22",
-      image: "/images/gourmet-burger.jpg",
+      image: "./images/gourmet-burger.jpg",
     },
   ],
   Desserts: [
@@ -93,7 +93,7 @@ const menuItems: Record<Category, MenuItem[]> = {
       name: "Chocolate Lava Cake",
       description: "Molten chocolate, vanilla bean ice cream, cocoa, berries.",
       price: "$13",
-      image: "/images/chocolate-lava-cake.jpg",
+      image: "./images/chocolate-lava-cake.jpg",
     },
   ],
   Drinks: [
@@ -101,13 +101,13 @@ const menuItems: Record<Category, MenuItem[]> = {
       name: "Signature Citrus Spritz",
       description: "Sparkling citrus, orange, mint, chilled glass, bright finish.",
       price: "$14",
-      image: "/images/citrus-spritz.jpg",
+      image: "./images/citrus-spritz.jpg",
     },
     {
       name: "Curated Red Wine",
       description: "A rotating selection of elegant reds from small producers.",
       price: "$16",
-      image: "/images/wine-glass.jpg",
+      image: "./images/wine-glass.jpg",
     },
   ],
 };
@@ -560,7 +560,7 @@ export default function App() {
         >
           <motion.img
             style={{ y: heroY, scale: heroScale }}
-            src="/images/hero.jpg"
+            src="./images/hero.jpg"
             alt="Beautifully plated gourmet dish in a modern fine dining setting"
             className="absolute inset-0 h-full w-full object-cover opacity-80"
           />
@@ -632,7 +632,7 @@ export default function App() {
             >
               <div className="overflow-hidden rounded-2xl shadow-xl">
                 <img
-                  src="/images/wine-glass.jpg"
+                  src="./images/wine-glass.jpg"
                   alt="Red wine near window light"
                   className="aspect-[4/5] h-full w-full object-cover transition duration-700 hover:scale-105"
                 />
